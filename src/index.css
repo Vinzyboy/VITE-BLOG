@@ -37,7 +37,7 @@
     @apply h-full;
   }
   body {
-    @apply text-black font-['Roboto'] leading-tight overflow-x-hidden p-2;
+    @apply text-body font-['Roboto'] leading-tight overflow-x-hidden;
   }
   h1,
   h2,
@@ -213,12 +213,22 @@
   .btn-animate::after {
     @apply transition-all absolute content-[attr(data-text)] -bottom-[14px] left-0 w-full text-dark block;
   }
-    .btn-animate:hover::before {
-        @apply bottom-10 duration-300;
-    }
-    .btn-animate:hover::after {
-        @apply bottom-2 duration-300;
-    }
+  .btn-animate:hover::before {
+    @apply bottom-10 duration-300;
+  }
+  .btn-animate:hover::after {
+    @apply bottom-2 duration-300;
+  }
+
+  .blog-content h2 {
+    @apply text-4xl font-normal font-['syne'];
+  }
+  .blog-content h3 {
+    @apply text-3xl font-normal font-['syne'];
+  }
+  .blog-content p {
+    @apply leading-relaxed mb-5;
+  }
 }
 
 @layer utilities {
